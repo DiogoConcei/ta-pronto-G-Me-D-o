@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.line {
+    border-right: 2px solid #E7DFDD;
+    color: #E7DFDD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 2.50rem;
+    cursor: pointer;
+}
+
+.line span {
+    color: #4717F6;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 15em;
+    }
+}
+
+.type-animation {
+    animation:
+        cursor 500ms steps(28) infinite normal,
+        type 4s steps(28) 1s normal both;
+}
+
+@keyframes cursor {
+    from {
+        border-right-color: #E7DFDD;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+
+
+
+/* FUNDO DO DOCUMENTO HTML*/
+/* BODY */
+.conteudo-loadpage {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(../public/img5.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    height: 190vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+/* LOGO DO SENAC - FORMATAÇÃO DO HEADER */
+.logo-senac-header {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+/* LINK SENAC */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* LOGO SENAC */
+.logo {
+    font-size: 2.3rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+
+/* MAIN TAG - CONTEÚDO PRINCIPAL */
+.mainload {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXTOS CONTEÚDO PRINCIPAL */
+.titulo-primario {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.titulo-secundario {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+/* BOTÕES */
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.botoes button:hover {
+    color: rgb(251, 255, 0);
+    border: none;
+}
+
+.botoes button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.botoes button:hover:before {
+    width: 100%;
+}
+
+/* TÍTULO PLANOS */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CARDS PLANOS */
+.divs-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 80px;
+    margin-top: 3%;
+}
+
+/* DENTRO DOS CARDS - TÍTULO E BOTÃO */
+.img1,
+.img2,
+.img3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 260px;
+    border-radius: 20px;
+    filter: brightness(50%);
+}
+
+/* HOVER´S DOS CARDS */
+.img1:hover {
+    filter: brightness(70%);
+    transform: scale(0.95);
+    transition: 0.6s ease-in-out;
+}
+
+.img2:hover {
+    filter: brightness(70%);
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out;
+}
+
+.img3:hover {
+    filter: brightness(70%);
+    transform: scale(0.95);
+    transition: 0.6s ease-in-out;
+}
+
+
+/* FOTO DE FUNDO DOS CARDS */
+.img1 {
+    background: url(../public/plano1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-x: 0px;
+}
+
+.img2 {
+    background: url(../public/plano2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-x: 0px;
+    height: 240px;
+}
+
+.img3 {
+    background: url(../public/plano3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: 0px;
+}
+
+/* TÍTULO DOS PLANOS */
+.title-plans {
+    font-size: 2.6rem;
+}
+
+/* BOTÃO DOS PLANOS */
+.btn-planos {
+    width: 80px;
+    height: 60px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 5px solid white;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+}
